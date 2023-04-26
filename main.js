@@ -27,13 +27,23 @@ function palindromeChecker() {
       arr.unshift(word[i])
       ar.push(word[i])
     }
+    console.log(ar)
+    console.log(arr)
     
     //looping trough the arrays to search for same elements
     for(let i = 0; i < ar.length; i++) {
       if (ar[i] === arr[i]) {
+        display2.innerHTML =""
         display1.innerHTML = "Is a palindrome"
-      } else display2.innerHTML = "Is not a palindrome"
+      } else {
+        display1.innerHTML =""
+        display2.innerHTML = "Is not a palindrome"
+      }
+      continue
     }
+    console.log(input_text)
+    input_text = ""
+    console.log(input_text)
   }  
 }
 
