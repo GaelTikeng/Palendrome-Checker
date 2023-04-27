@@ -8,7 +8,7 @@ function palindromeChecker() {
   if (input_text ==="") {
     display2.innerHTML = "Please enter a word or phrase"
   } else {
-    //removing special characters and spaces the string
+    //removing special characters and spaces from the string
     let res=''
     for(let i = 0; i < input_text.length; i++) {
       let character = input_text[i]
@@ -45,6 +45,8 @@ function palindromeChecker() {
     input_text = ""
     console.log(input_text)
   }  
+  arr=[]
+  ar=[]
 }
 
 
