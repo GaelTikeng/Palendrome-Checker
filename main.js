@@ -21,14 +21,13 @@ function palindromeChecker() {
       continue
     }
     let word = res.toLowerCase()
-    
+    console.
+    log(word)
     // creating two arrays: a normal and a reversed array
     for(let i in word) {
       arr.unshift(word[i])
       ar.push(word[i])
     }
-    console.log(ar)
-    console.log(arr)
     
     //looping trough the arrays to search for same elements
     for(let i = 0; i < ar.length; i++) {
