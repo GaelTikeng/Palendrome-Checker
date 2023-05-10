@@ -3,15 +3,15 @@ const display2 = document.querySelector('.display2')
 let arr = []
 let ar = []
 
-function palindromeChecker() {
-  let input_text = document.querySelector('.text').value
-  if (input_text ==="") {
-    display2.innerHTML = "Please enter a word or phrase"
+function palindromeChecker () {
+  let inputText = document.querySelector('.text').value
+  if (inputText === '') {
+    display2.innerHTML = 'Please enter a word or phrase'
   } else {
-    //removing special characters and spaces from the string
-    let res=''
-    for(let i = 0; i < input_text.length; i++) {
-      let character = input_text[i]
+    // removing special characters and spaces from the string
+    let res = ''
+    for (let i = 0; i < inputText.length; i++) {
+      const character = inputText[i]
       if (+character) {
         res += character
       } 
@@ -20,33 +20,29 @@ function palindromeChecker() {
       }
       continue
     }
-    let word = res.toLowerCase()
-    console.
-    log(word)
-    // creating two arrays: a normal and a reversed array
-    for(let i in word) {
+    const word = res.toLowerCase()
+    console.log(word)
+    // creating two arrays: a normal array and a reversed array
+    for (let i in word) {
       arr.unshift(word[i])
       ar.push(word[i])
     }
     
     //looping trough the arrays to search for same elements
-    for(let i = 0; i < ar.length; i++) {
+    for (let i = 0; i < ar.length; i++) {
       if (ar[i] === arr[i]) {
-        display2.innerHTML =""
-        display1.innerHTML = "Is a palindrome"
+        display2.innerHTML = ''
+        display1.innerHTML = 'Is a palindrome'
       } else {
-        display1.innerHTML =""
-        display2.innerHTML = "Is not a palindrome"
+        display1.innerHTML = ''
+        display2.innerHTML = 'Is not a palindrome'
       }
       continue
     }
-    console.log(input_text)
-    input_text = ""
-    console.log(input_text)
+    console.log(inputText)
+    inputText = ''
+    console.log(inputText)
   }  
-  arr=[]
-  ar=[]
+  arr = []
+  ar = []
 }
-
-
-
