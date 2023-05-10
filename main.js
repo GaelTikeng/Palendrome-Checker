@@ -3,18 +3,21 @@ const display2 = document.querySelector('.display2')
 let arr = []
 let ar = []
 
+document.querySelector('.enter').addEventListener('click', palindromeChecker)
+
 function palindromeChecker () {
   let inputText = document.querySelector('.text').value
   if (inputText === '') {
     display2.innerHTML = 'Please enter a word or phrase'
-  } else {
+  }
+  else {
     // removing special characters and spaces from the string
     let res = ''
     for (let i = 0; i < inputText.length; i++) {
       const character = inputText[i]
       if (+character) {
         res += character
-      } 
+      }
       else if (character.toLowerCase() !== character.toUpperCase()) {
         res += character
       }
@@ -23,12 +26,12 @@ function palindromeChecker () {
     const word = res.toLowerCase()
     console.log(word)
     // creating two arrays: a normal array and a reversed array
-    for (let i in word) {
+    for (const i in word) {
       arr.unshift(word[i])
       ar.push(word[i])
     }
-    
-    //looping trough the arrays to search for same elements
+
+    // looping trough the arrays to search for same elements
     for (let i = 0; i < ar.length; i++) {
       if (ar[i] === arr[i]) {
         display2.innerHTML = ''
@@ -42,7 +45,8 @@ function palindromeChecker () {
     console.log(inputText)
     inputText = ''
     console.log(inputText)
-  }  
+  }
   arr = []
   ar = []
 }
+  
