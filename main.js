@@ -36,7 +36,8 @@ function palindromeChecker () {
       if (ar[i] === arr[i]) {
         display2.innerHTML = ''
         display1.innerHTML = 'Is a palindrome'
-      } else {
+      }
+      else {
         display1.innerHTML = ''
         display2.innerHTML = 'Is not a palindrome'
       }
@@ -46,7 +47,7 @@ function palindromeChecker () {
     inputText = ''
     console.log(inputText)
   }
+  // clearing the arrays stoting the input text inorder to recieve another text or phrase
   arr = []
   ar = []
 }
-  
