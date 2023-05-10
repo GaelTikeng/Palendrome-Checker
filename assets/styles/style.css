@@ -4,7 +4,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: 'Crimson Text', serif;
+  font-family: "Crimson Text", serif;
 }
 
 body {
@@ -57,7 +57,7 @@ h1 {
   font-size: 30px;
 }
 
-.enter-btn {
+.enterbtn {
   width: 80%;
   margin: 0 auto;
   display: flex;
@@ -90,4 +90,3 @@ h1 {
   font-size: 35px;
   }
 }
-
