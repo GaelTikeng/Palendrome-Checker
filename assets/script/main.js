@@ -10,7 +10,6 @@ function palindromeChecker () {
   if (inputText === '') {
     display2.innerHTML = 'Please enter a word or phrase'
   }
-  
   else {
     // removing special characters and spaces from the string
     let res = ''
@@ -19,15 +18,15 @@ function palindromeChecker () {
       if (+character) {
         res += character
       }
-
-      else if (character.toLowerCase() !== character.toUpperCase()) {
+      else
+      if (character.toLowerCase() !== character.toUpperCase()) {
         res += character
       }
       continue
     }
     const word = res.toLowerCase()
     // creating two arrays: a normal array and a reversed array
-    for (const i in word) {
+    for (let i in word) {
       arr.unshift(word[i])
       ar.push(word[i])
     }
@@ -38,16 +37,13 @@ function palindromeChecker () {
         display2.innerHTML = ''
         display1.innerHTML = 'Is a palindrome'
       }
-
       else {
         display1.innerHTML = ''
         display2.innerHTML = 'Is not a palindrome'
       }
       continue
     }
-    console.log(inputText)
     inputText = ''
-    console.log(inputText)
   }
   // clearing the arrays stoting the input text inorder to recieve another text or phrase
   arr = []
