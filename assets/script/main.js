@@ -10,6 +10,7 @@ function palindromeChecker () {
   if (inputText === '') {
     display2.innerHTML = 'Please enter a word or phrase'
   }
+  
   else {
     // removing special characters and spaces from the string
     let res = ''
@@ -18,6 +19,7 @@ function palindromeChecker () {
       if (+character) {
         res += character
       }
+
       else if (character.toLowerCase() !== character.toUpperCase()) {
         res += character
       }
@@ -36,6 +38,7 @@ function palindromeChecker () {
         display2.innerHTML = ''
         display1.innerHTML = 'Is a palindrome'
       }
+
       else {
         display1.innerHTML = ''
         display2.innerHTML = 'Is not a palindrome'
