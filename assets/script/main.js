@@ -24,7 +24,6 @@ function palindromeChecker () {
       continue
     }
     const word = res.toLowerCase()
-    console.log(word)
     // creating two arrays: a normal array and a reversed array
     for (const i in word) {
       arr.unshift(word[i])
