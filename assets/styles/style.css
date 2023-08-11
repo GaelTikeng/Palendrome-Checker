@@ -4,22 +4,24 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: 'Crimson Text', serif;
+  font-family: "Crimson Text", serif;
 }
 
 body {
   padding: 0;
-  background-image: linear-gradient(), url("https://api.time.com/wp-content/uploads/2015/04/go-hang-a-salami.jpg");
-
+  margin: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .maincontainer {
-  width: 60%;
+  width: 600px;
   height: fit-content;
-  margin: 10px auto;
+  margin: 50px auto;
   padding: 10px 0;
   border-radius: 10px;
-  background-color: red;
+  background: #d9d9d9f1;
+  box-shadow: 3px 3px 15px #000;
 }
 
 h1 {
@@ -54,7 +56,7 @@ h1 {
   font-size: 30px;
 }
 
-.enter_btn {
+.enterbtn {
   width: 80%;
   margin: 0 auto;
   display: flex;
@@ -67,7 +69,23 @@ h1 {
   margin: 0 auto;
   text-align: center;
   font-size: 20px;
-  border-radius: 50%;
+  border-radius: 5px;
   border: none;
   align-items: center;
+  box-shadow: 0 3px 15px 0 #171718;
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    height: 100vh;
+  }
+
+  .maincontainer {
+    width: 90%;
+    height: 43vh;
+  }
+
+  h1 {
+    font-size: 35px;
+  }
 }
